@@ -1,7 +1,3 @@
-<?php 
-
-	echo "Hello Wor";
-	echo "Teste";
-
-
- ?>
+<?php
+    echo "Teste";
+?>
