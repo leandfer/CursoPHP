@@ -1,3 +1,5 @@
 <?php
-    echo "Teste";
+    $nome = "Hcode";
+    var_dump($nome);
+
 ?>
