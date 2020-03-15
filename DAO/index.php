@@ -14,7 +14,18 @@
     //echo json_encode($search);
 
     //--buscanco pelo login e senha
+    //$usuario = new Usuario();
+    //$usuario->login("Dionizio","sadfsdg");
+    //echo $usuario;
+
+    //--criando um novo usuario
+    //$aluno = new Usuario("Maria", "@!#$%");
+    //$aluno->insert();
+    //echo $aluno;
+
     $usuario = new Usuario();
-    $usuario->login("Dionizio","sadfsdg");
+
+    $usuario->loadById(8);
+    $usuario->update("professor", "98765");
     echo $usuario;
 ?>
