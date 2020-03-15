@@ -8,18 +8,18 @@
             $this->conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root", "235689");
         }
 
-        private function setParams($statments, $parameters = array()){
+        private function setParams($statement, $parameters = array()){
             
             foreach ($parameters as $key => $value) {
                 
-                $this->setParam($key,$value);
+                $this->setParam($statement, $key,$value);
 
             }
         }
 
-        private function setParam($stament, $key, $value){
+        private function setParam($statement, $key, $value){
 
-            $stament->bindParam($key, $value);
+            $statement->bindParam($key, $value);
         }
 
         public function query($rawQuery, $params = array()){
